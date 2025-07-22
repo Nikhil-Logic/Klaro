@@ -14,9 +14,9 @@ const Recommend = () => {
     formData.append("file", file);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/recommend", {
+      const response = await fetch("https://thenikhil-fashion-recommender-api.hf.space/recommend", {
         method: "POST",
-        body: formData,
+        body: formData
       });
 
       if (!response.ok) throw new Error("Failed to get recommendations");
