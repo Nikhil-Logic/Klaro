@@ -1,12 +1,44 @@
-# React + Vite
+# Klaro 👗 – Fashion Recommendation System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Klaro is a deep learning-powered fashion recommendation system that suggests visually similar clothing items. It uses a ResNet50-based image embedding model served via a FastAPI backend, with a Vite + React frontend. Hosted on [Vercel](https://klaro-dev.vercel.app).
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
+👉 [https://klaro-dev.vercel.app](https://klaro-dev.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Features
 
-## Expanding the ESLint configuration
+- 🧠 CNN-powered image similarity (ResNet50)
+- 📸 Upload any fashion image to get recommendations
+- 🧾 Displays clothing metadata (gender, color, type, usage)
+- ⚡ FastAPI backend with REST API
+- 🌐 React + Vite frontend
+- ☁️ Cloudinary-hosted images
+- 🤗 Hugging Face-hosted data (CSV, embeddings, filenames)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧰 Tech Stack
+
+| Part       | Technology                      |
+|------------|----------------------------------|
+| Frontend   | React (Vite), Tailwind CSS       |
+| Backend    | FastAPI, TensorFlow, Sklearn     |
+| Model      | ResNet50 (Image Embeddings)      |
+| Hosting    | Vercel (Frontend), Hugging Face (Data), Cloudinary (Images) |
+
+## 📸 How It Works
+
+1. User uploads an image
+2. The backend:
+   - Extracts features using ResNet50
+   - Compares them to precomputed embeddings
+   - Returns top 5 most similar clothing items
+3. Frontend displays the recommended images + metadata
+
+## 🛠️ Setup Instructions
+
+### 1. Backend
+
+```bash
+git clone https://github.com/Nikhil-Logic/Klaro
+cd Klaro/backend
+pip install -r requirements.txt
+uvicorn app:app --reload
