@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Recommend from "./pages/Recommend";
 import Products from "./pages/Products";
 import About from "./pages/About";
+import SearchRecommend from "./pages/SearchRecommend";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/recommend" element={<Recommend />} />
           <Route path="/products" element={<Products />} />
           <Route path="/about" element={<About />} />
+          <Route path="/search" element={<SearchRecommend />} /> {/* ✅ */}
         </Routes>
       </div>
     </Router>
