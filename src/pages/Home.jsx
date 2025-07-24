@@ -411,10 +411,10 @@ const AboutPage = () => {
     }, [teamMemberRefs]);
 
     const team = [
-        { name: "Nikhil", role: "AI & Backend Lead" },
+        { name: "Harsh Vardhan", role: "UI/UX Designer" },
         { name: "Jatin", role: "Frontend Architect" },
-        { name: "Harsh", role: "UI/UX Designer" },
         { name: "Nalin", role: "Product Manager" }
+        { name: "Nikhil", role: "AI & Backend" },
     ];
 
     return (
@@ -422,7 +422,7 @@ const AboutPage = () => {
             <div className="max-w-4xl mx-auto">
                 <div ref={titleRef} className="text-center reveal opacity-0">
                     <h2 className="text-4xl font-extrabold text-slate-800 sm:text-5xl font-manrope">
-                        We are ML Engineers now web devlopers
+                        We are ML Engineers not web devlopers
                     </h2>
   
                 </div>
