@@ -413,8 +413,8 @@ const AboutPage = () => {
     const team = [
         { name: "Harsh Vardhan", role: "UI/UX Designer" },
         { name: "Jatin", role: "Frontend Architect" },
-        { name: "Nalin", role: "Product Manager" }
-        { name: "Nikhil", role: "AI & Backend" },
+        { name: "Nalin", role: "Product Manager" },
+        { name: "Nikhil", role: "AI & Backend" }
     ];
 
     return (
